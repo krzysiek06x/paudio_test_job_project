@@ -34,6 +34,5 @@ namespace WindowsFormsApplication1
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-
     }
 }
