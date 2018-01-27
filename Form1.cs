@@ -22,6 +22,11 @@ namespace WindowsFormsApplication1
             this.StartPosition = FormStartPosition.CenterScreen;
             this.ControlBox = false;
 
+
+            // add event to move form via mouse
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.ResumeLayout(false);
+
         }
 
 
