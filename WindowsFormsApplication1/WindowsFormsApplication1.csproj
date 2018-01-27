@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="functions\Class1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="D:\vs2010_express_projects\pAudio_test_project_git\Form1.cs">
       <SubType>Form</SubType>
       <Link>Form1.cs</Link>
@@ -82,6 +85,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_64_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_64_red.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
