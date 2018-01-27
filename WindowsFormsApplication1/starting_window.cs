@@ -13,7 +13,6 @@ namespace WindowsFormsApplication1
 {
     public partial class starting_window : Form
     {
-   
         public starting_window()
         {
             InitializeComponent();
@@ -25,7 +24,9 @@ namespace WindowsFormsApplication1
             this.StartPosition = FormStartPosition.CenterScreen;
             this.ControlBox = false;
 
-
+            // add event to move form via mouse
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.starting_window_MouseDown);
+            this.ResumeLayout(false);
         }
 
         private void ok_button_Click(object sender, EventArgs e)

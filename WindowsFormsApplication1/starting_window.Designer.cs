@@ -43,10 +43,10 @@
             this.logo_box.ErrorImage = null;
             this.logo_box.Image = ((System.Drawing.Image)(resources.GetObject("logo_box.Image")));
             this.logo_box.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.logo_box.Location = new System.Drawing.Point(12, 12);
+            this.logo_box.Location = new System.Drawing.Point(114, 12);
             this.logo_box.Name = "logo_box";
-            this.logo_box.Size = new System.Drawing.Size(344, 165);
-            this.logo_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.logo_box.Size = new System.Drawing.Size(198, 150);
+            this.logo_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.logo_box.TabIndex = 2;
             this.logo_box.TabStop = false;
             // 
@@ -55,7 +55,7 @@
             this.welcome_label.AutoSize = true;
             this.welcome_label.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.welcome_label.ForeColor = System.Drawing.Color.White;
-            this.welcome_label.Location = new System.Drawing.Point(107, 180);
+            this.welcome_label.Location = new System.Drawing.Point(136, 165);
             this.welcome_label.Name = "welcome_label";
             this.welcome_label.Size = new System.Drawing.Size(155, 28);
             this.welcome_label.TabIndex = 3;
@@ -69,9 +69,9 @@
             this.ok_button.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ok_button.ForeColor = System.Drawing.SystemColors.Window;
             this.ok_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ok_button.Location = new System.Drawing.Point(12, 222);
+            this.ok_button.Location = new System.Drawing.Point(55, 260);
             this.ok_button.Name = "ok_button";
-            this.ok_button.Size = new System.Drawing.Size(344, 58);
+            this.ok_button.Size = new System.Drawing.Size(311, 45);
             this.ok_button.TabIndex = 4;
             this.ok_button.Text = "Ok";
             this.ok_button.UseVisualStyleBackColor = false;
@@ -82,7 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(368, 292);
+            this.ClientSize = new System.Drawing.Size(419, 317);
             this.Controls.Add(this.ok_button);
             this.Controls.Add(this.welcome_label);
             this.Controls.Add(this.logo_box);
