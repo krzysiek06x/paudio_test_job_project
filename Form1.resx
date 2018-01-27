@@ -136,7 +136,7 @@
     <value>NoControl</value>
   </data>
   <data name="pcb_choose_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 168</value>
+    <value>12, 204</value>
   </data>
   <data name="pcb_choose_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 170</value>
@@ -160,7 +160,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pcb_choose_button.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="logo_box.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -175,7 +175,7 @@
     <value>145, 12</value>
   </data>
   <data name="logo_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 150</value>
+    <value>198, 186</value>
   </data>
   <data name="logo_box.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -193,7 +193,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;logo_box.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cancel_button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -208,7 +208,7 @@
     <value>NoControl</value>
   </data>
   <data name="cancel_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 372</value>
+    <value>12, 408</value>
   </data>
   <data name="cancel_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 77</value>
@@ -229,7 +229,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cancel_button.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="info_button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -247,7 +247,7 @@
     <value>NoControl</value>
   </data>
   <data name="info_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 168</value>
+    <value>231, 204</value>
   </data>
   <data name="info_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 170</value>
@@ -271,6 +271,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;info_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="welcome_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="welcome_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 12pt, style=Bold, Italic</value>
+  </data>
+  <data name="welcome_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 158</value>
+  </data>
+  <data name="welcome_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
+  </data>
+  <data name="welcome_label.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="welcome_label.Text" xml:space="preserve">
+    <value>Demo Application</value>
+  </data>
+  <data name="&gt;&gt;welcome_label.Name" xml:space="preserve">
+    <value>welcome_label</value>
+  </data>
+  <data name="&gt;&gt;welcome_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;welcome_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;welcome_label.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -280,7 +310,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 461</value>
+    <value>484, 497</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

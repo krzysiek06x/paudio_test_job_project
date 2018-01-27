@@ -7,6 +7,8 @@ using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
@@ -20,6 +22,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new starting_window());
             Application.Run(new Form1());
         }
     }

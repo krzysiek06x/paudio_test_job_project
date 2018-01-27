@@ -33,6 +33,7 @@
             this.logo_box = new System.Windows.Forms.PictureBox();
             this.cancel_button = new System.Windows.Forms.Button();
             this.info_button = new System.Windows.Forms.Button();
+            this.welcome_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo_box)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,13 @@
             this.info_button.Image = global::WindowsFormsApplication1.Properties.Resources.info_128;
             this.info_button.Name = "info_button";
             this.info_button.UseVisualStyleBackColor = false;
+            this.info_button.Click += new System.EventHandler(this.info_button_Click);
+            // 
+            // welcome_label
+            // 
+            resources.ApplyResources(this.welcome_label, "welcome_label");
+            this.welcome_label.ForeColor = System.Drawing.Color.White;
+            this.welcome_label.Name = "welcome_label";
             // 
             // Form1
             // 
@@ -77,6 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ControlBox = false;
+            this.Controls.Add(this.welcome_label);
             this.Controls.Add(this.info_button);
             this.Controls.Add(this.pcb_choose_button);
             this.Controls.Add(this.logo_box);
@@ -96,6 +105,7 @@
         private System.Windows.Forms.PictureBox logo_box;
         private System.Windows.Forms.Button pcb_choose_button;
         private System.Windows.Forms.Button info_button;
+        private System.Windows.Forms.Label welcome_label;
     }
 }
 

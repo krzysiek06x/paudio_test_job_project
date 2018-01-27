@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about_window.Designer.cs">
+      <DependentUpon>about_window.cs</DependentUpon>
+    </Compile>
     <Compile Include="functions\window_move.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="starting_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="starting_window.Designer.cs">
+      <DependentUpon>starting_window.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about_window.resx">
+      <DependentUpon>about_window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="D:\vs2010_express_projects\pAudio_test_project_git\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>
@@ -67,6 +82,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="starting_window.resx">
+      <DependentUpon>starting_window.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

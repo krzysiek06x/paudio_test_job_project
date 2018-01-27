@@ -6,17 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    
-    public partial class Form1 : Form
+    public partial class starting_window : Form
     {
-       
-        public Form1()
+   
+        public starting_window()
         {
             InitializeComponent();
 
@@ -27,20 +25,13 @@ namespace WindowsFormsApplication1
             this.StartPosition = FormStartPosition.CenterScreen;
             this.ControlBox = false;
 
-            // add event to move form via mouse
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            this.ResumeLayout(false);
 
         }
-        // cancel button - exit from application
-        private void cancel_button_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        private void info_button_Click(object sender, EventArgs e)
-        {
-            new about_window().Show();
 
+        private void ok_button_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
         }
     }
 }
