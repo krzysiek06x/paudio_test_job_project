@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pcb_choose_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logo_box = new System.Windows.Forms.PictureBox();
             this.cancel_button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.info_button = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_box)).BeginInit();
             this.SuspendLayout();
             // 
             // pcb_choose_button
@@ -45,12 +45,12 @@
             this.pcb_choose_button.Name = "pcb_choose_button";
             this.pcb_choose_button.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // logo_box
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.logo;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.logo_box, "logo_box");
+            this.logo_box.Image = global::WindowsFormsApplication1.Properties.Resources.logo;
+            this.logo_box.Name = "logo_box";
+            this.logo_box.TabStop = false;
             // 
             // cancel_button
             // 
@@ -61,14 +61,14 @@
             this.cancel_button.UseVisualStyleBackColor = false;
             this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
-            // button1
+            // info_button
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Image = global::WindowsFormsApplication1.Properties.Resources.info_128;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.info_button, "info_button");
+            this.info_button.FlatAppearance.BorderSize = 0;
+            this.info_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.info_button.Image = global::WindowsFormsApplication1.Properties.Resources.info_128;
+            this.info_button.Name = "info_button";
+            this.info_button.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -77,14 +77,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.info_button);
             this.Controls.Add(this.pcb_choose_button);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.logo_box);
             this.Controls.Add(this.cancel_button);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowInTaskbar = false;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,9 +93,9 @@
         #endregion
 
         private System.Windows.Forms.Button cancel_button;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logo_box;
         private System.Windows.Forms.Button pcb_choose_button;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button info_button;
     }
 }
 

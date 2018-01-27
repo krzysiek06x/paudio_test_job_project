@@ -30,13 +30,6 @@ namespace WindowsFormsApplication1
         }
 
 
-
-
-
-
-
-
-
         private void cancel_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
