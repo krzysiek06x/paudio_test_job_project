@@ -9,3 +9,5 @@ C:\Users\Krzysiek\documents\visual studio 2010\Projects\WindowsFormsApplication1
 C:\Users\Krzysiek\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
