@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
 
     public partial class choose_board_items : Form
     {
-        
+        SerialPort port = new SerialPort();
         public choose_board_items()
         {
             InitializeComponent();
@@ -25,6 +25,8 @@ namespace WindowsFormsApplication1
 
         private void find_ports_button_Click(object sender, EventArgs e)
         {
+            int port_number = 1;
+            listBox1.Items.Clear();
             //create port
             SerialPort port = new SerialPort();
             //show list of valid com ports
@@ -33,50 +35,69 @@ namespace WindowsFormsApplication1
                 listBox1.Items.Add(s);
             }
             listBox2.Items.Add("Checking ports");
-            int port_number = 1;
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            //listBox2.Items.Add("items = " + listBox1.Items.Count);
+
+            if (listBox1.Items.Count != 0)
             {
-                try
+                for (int i = 0; i < listBox1.Items.Count; i++)
                 {
-                    port.PortName = "COM" + port_number;
-                    port.Open();
-                    listBox2.Items.Add("Port " + port.PortName + " not busy");
-                    port.Close();
+                    try
+                    {
+                        port.PortName = "COM" + port_number;
+                        port.Open();
+                        listBox2.Items.Add("Port " + port.PortName + " not busy");
+                        port.Dispose();
+                        port.Close();
+
+                    }
+                    catch
+                    {
+                        listBox2.Items.Add("Port " + port.PortName + " busy");
+                    }
                     port_number++;
                 }
-                catch
-                {
-                    listBox2.Items.Add("Port " + port.PortName + " busy");
-                }
+                connect_button.Enabled = true;
             }
+            else
+            {
+                listBox2.Items.Add("No avilable ports");
+            }
+
+
+
         }
 
         private void connect_button_Click(object sender, EventArgs e)
         {
-
-
-            try
+            if (port.IsOpen)
             {
-                listBox2.Items.Add("");
-                SerialPort port = new SerialPort();
-                port.PortName = listBox1.SelectedItem.ToString();
-                port.BaudRate = 9600;
-                port.Open();
-                listBox2.Items.Add("Otwarto port" + port.PortName);
+                connect_button.Text = "Connect";
+                port.Dispose();
                 port.Close();
-                listBox2.Items.Add("Zamknięto port " + port.PortName);
+                listBox2.Items.Add("Port " + port.PortName.ToString() + " closed");
+                connect_button.Enabled = false;
+                find_ports_button.Enabled = true;
+                foreach (string s in SerialPort.GetPortNames())
+                {
+                    listBox1.Items.Add(s);
+                }
             }
-            catch
+            else
             {
-                listBox2.Items.Add("Błąd, nie można otworzyć portu " + listBox1.SelectedItem.ToString());
+                try
+                {
+                    port.PortName = listBox1.SelectedItem.ToString();
+                    port.Open();
+                    listBox2.Items.Add("Port " + listBox1.SelectedItem.ToString() + " opened");
+                    connect_button.Text = "Disconnect";
+                    listBox1.Items.Clear();
+                }
+                catch
+                {
+                    listBox2.Items.Add("Can't open port  " + listBox1.SelectedItem.ToString() + "or port not selected");
+                }
+                find_ports_button.Enabled = false;
             }
         }
-
-    
-    
-    
-    
-    
-    
     }
 }
