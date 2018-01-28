@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="choose_board_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_board_items.Designer.cs">
+      <DependentUpon>choose_board_items.cs</DependentUpon>
+    </Compile>
     <Compile Include="D:\vs2010_express_projects\pAudio_test_project_git\Form1.cs">
       <SubType>Form</SubType>
       <Link>Form1.cs</Link>
@@ -56,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="choose_board_items.resx">
+      <DependentUpon>choose_board_items.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="D:\vs2010_express_projects\pAudio_test_project_git\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>

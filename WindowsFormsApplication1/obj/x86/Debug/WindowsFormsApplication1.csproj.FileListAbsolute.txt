@@ -11,3 +11,9 @@ D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.choose_board_items.resources
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Jackob\Desktop\Krzysiek\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
