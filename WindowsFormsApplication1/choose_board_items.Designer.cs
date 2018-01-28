@@ -38,14 +38,14 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(89, 179);
+            this.listBox1.Location = new System.Drawing.Point(12, 76);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(199, 148);
             this.listBox1.TabIndex = 0;
             // 
             // find_ports_button
             // 
-            this.find_ports_button.Location = new System.Drawing.Point(89, 65);
+            this.find_ports_button.Location = new System.Drawing.Point(12, 12);
             this.find_ports_button.Name = "find_ports_button";
             this.find_ports_button.Size = new System.Drawing.Size(199, 58);
             this.find_ports_button.TabIndex = 1;
@@ -57,16 +57,18 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(89, 422);
+            this.listBox2.Location = new System.Drawing.Point(12, 259);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(872, 132);
+            this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.listBox2.Size = new System.Drawing.Size(872, 340);
             this.listBox2.TabIndex = 2;
             // 
             // connect_button
             // 
-            this.connect_button.Location = new System.Drawing.Point(89, 334);
+            this.connect_button.Enabled = false;
+            this.connect_button.Location = new System.Drawing.Point(12, 230);
             this.connect_button.Name = "connect_button";
-            this.connect_button.Size = new System.Drawing.Size(120, 23);
+            this.connect_button.Size = new System.Drawing.Size(199, 23);
             this.connect_button.TabIndex = 3;
             this.connect_button.Text = "Connect";
             this.connect_button.UseVisualStyleBackColor = true;
@@ -76,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 595);
+            this.ClientSize = new System.Drawing.Size(909, 619);
             this.Controls.Add(this.connect_button);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.find_ports_button);
