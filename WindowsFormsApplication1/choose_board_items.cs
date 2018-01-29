@@ -51,7 +51,7 @@ namespace WindowsFormsApplication1
             {
                 listBox1.Items.Add(s);
             }
-            listBox2.Items.Add("Checking ports");
+            listBox2.TopIndex = listBox2.Items.Add("Checking ports");
             //listBox2.Items.Add("items = " + listBox1.Items.Count);
 
             if (listBox1.Items.Count != 0)
@@ -62,14 +62,14 @@ namespace WindowsFormsApplication1
                     {
                         port.PortName = "COM" + port_number;
                         port.Open();
-                        listBox2.Items.Add("Port " + port.PortName + " not busy");
+                        listBox2.TopIndex = listBox2.Items.Add("Port " + port.PortName + " not busy");
                         port.Dispose();
                         port.Close();
 
                     }
                     catch
                     {
-                        listBox2.Items.Add("Port " + port.PortName + " busy");
+                        listBox2.TopIndex = listBox2.Items.Add("Port " + port.PortName + " busy");
                     }
                     port_number++;
                 }
@@ -77,7 +77,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                listBox2.Items.Add("No avilable ports");
+                listBox2.TopIndex = listBox2.Items.Add("No avilable ports");
             }
 
 
@@ -91,7 +91,7 @@ namespace WindowsFormsApplication1
                 connect_button.Text = "Connect";
                 port.Dispose();
                 port.Close();
-                listBox2.Items.Add("Port " + port.PortName.ToString() + " closed");
+                listBox2.TopIndex = listBox2.Items.Add("Port " + port.PortName.ToString() + " closed");
                 connect_button.Enabled = false;
                 find_ports_button.Enabled = true;
                 board1_button.Enabled = false;
@@ -107,13 +107,13 @@ namespace WindowsFormsApplication1
                 {
                     port.PortName = listBox1.SelectedItem.ToString();
                     port.Open();
-                    listBox2.Items.Add("Port " + listBox1.SelectedItem.ToString() + " opened");
+                    listBox2.TopIndex = listBox2.Items.Add("Port " + listBox1.SelectedItem.ToString() + " opened");
                     connect_button.Text = "Disconnect";
                     listBox1.Items.Clear();
                 }
                 catch
                 {
-                    listBox2.Items.Add("Can't open port  " + listBox1.SelectedItem.ToString() + "or port not selected");
+                    listBox2.TopIndex = listBox2.Items.Add("Can't open port  " + listBox1.SelectedItem.ToString() + "or port not selected");
                 }
                 find_ports_button.Enabled = false;
                 board1_button.Enabled = true;
@@ -123,46 +123,46 @@ namespace WindowsFormsApplication1
 
         private void board1_button_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add("Start programming on " + port.PortName + " 1# board");
+            listBox2.TopIndex = listBox2.Items.Add("Start programming on " + port.PortName + " 1# board");
             Thread.Sleep(300);
-            listBox2.Items.Add("And here will be example");
+            listBox2.TopIndex = listBox2.Items.Add("And here will be example");
             Thread.Sleep(300);
-            listBox2.Items.Add("Connecting to board....");
+            listBox2.TopIndex = listBox2.Items.Add("Connecting to board....");
             Thread.Sleep(300);
-            listBox2.Items.Add("Connected");
+            listBox2.TopIndex = listBox2.Items.Add("Connected");
             Thread.Sleep(300);
-            listBox2.Items.Add("Erasing..");
+            listBox2.TopIndex = listBox2.Items.Add("Erasing..");
             Thread.Sleep(300);
-            listBox2.Items.Add("Programming..");
+            listBox2.TopIndex = listBox2.Items.Add("Programming..");
             Thread.Sleep(300);
-            listBox2.Items.Add("1# Board programmed !");
+            listBox2.TopIndex = listBox2.Items.Add("1# Board programmed !");
             Thread.Sleep(300);
-            listBox2.Items.Add("Checking..");
+            listBox2.TopIndex = listBox2.Items.Add("Checking..");
             Thread.Sleep(300);
-            listBox2.Items.Add("And and other instructions.. Thanks for programming!");
+            listBox2.TopIndex = listBox2.Items.Add("And and other instructions.. Thanks for programming!");
             Thread.Sleep(300);
             
         }
 
         private void board2_button_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add("Start programming on " + port.PortName + " 2# board");
+            listBox2.TopIndex = listBox2.Items.Add("Start programming on " + port.PortName + " 2# board");
             Thread.Sleep(300);
-            listBox2.Items.Add("And here will be example");
+            listBox2.TopIndex = listBox2.Items.Add("And here will be example");
             Thread.Sleep(300);
-            listBox2.Items.Add("Connecting to board....");
+            listBox2.TopIndex = listBox2.Items.Add("Connecting to board....");
             Thread.Sleep(300);
-            listBox2.Items.Add("Connected");
+            listBox2.TopIndex = listBox2.Items.Add("Connected");
             Thread.Sleep(300);
-            listBox2.Items.Add("Erasing..");
+            listBox2.TopIndex = listBox2.Items.Add("Erasing..");
             Thread.Sleep(300);
-            listBox2.Items.Add("Programming..");
+            listBox2.TopIndex = listBox2.Items.Add("Programming..");
             Thread.Sleep(300);
-            listBox2.Items.Add("2# Board programmed !");
+            listBox2.TopIndex = listBox2.Items.Add("2# Board programmed !");
             Thread.Sleep(300);
-            listBox2.Items.Add("Checking..");
+            listBox2.TopIndex = listBox2.Items.Add("Checking..");
             Thread.Sleep(300);
-            listBox2.Items.Add("And and other instructions.. Thanks for programming!");
+            listBox2.TopIndex = listBox2.Items.Add("And and other instructions.. Thanks for programming!");
             Thread.Sleep(300);
         }
     }
