@@ -136,10 +136,13 @@
     <value>NoControl</value>
   </data>
   <data name="pcb_choose_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 204</value>
+    <value>16, 251</value>
+  </data>
+  <data name="pcb_choose_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pcb_choose_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 170</value>
+    <value>321, 209</value>
   </data>
   <data name="pcb_choose_button.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -172,13 +175,16 @@
     <value>NoControl</value>
   </data>
   <data name="logo_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 12</value>
+    <value>241, 40</value>
+  </data>
+  <data name="logo_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="logo_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 186</value>
+    <value>189, 150</value>
   </data>
   <data name="logo_box.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
+    <value>CenterImage</value>
   </data>
   <data name="logo_box.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -208,10 +214,13 @@
     <value>NoControl</value>
   </data>
   <data name="cancel_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 408</value>
+    <value>16, 502</value>
+  </data>
+  <data name="cancel_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cancel_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 77</value>
+    <value>613, 95</value>
   </data>
   <data name="cancel_button.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -247,10 +256,13 @@
     <value>NoControl</value>
   </data>
   <data name="info_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 204</value>
+    <value>308, 251</value>
+  </data>
+  <data name="info_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="info_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 170</value>
+    <value>321, 209</value>
   </data>
   <data name="info_button.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -280,10 +292,13 @@
     <value>Segoe Print, 12pt, style=Bold, Italic</value>
   </data>
   <data name="welcome_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 158</value>
+    <value>235, 194</value>
+  </data>
+  <data name="welcome_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="welcome_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 28</value>
+    <value>195, 35</value>
   </data>
   <data name="welcome_label.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -307,10 +322,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 497</value>
+    <value>645, 612</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3659,6 +3674,9 @@
         AAAAAAAAAAAAAAAAAAAAAOB/AADgDwAAwAcAAIADAACAAQAAgAEAAAABAACAAAAAwAAAAMABAADAAQAA
         wAEAAOADAADwBwAA//8AAP//AAA=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>pAudio demo program</value>

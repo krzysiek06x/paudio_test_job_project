@@ -52,6 +52,12 @@
     <Compile Include="about_window.Designer.cs">
       <DependentUpon>about_window.cs</DependentUpon>
     </Compile>
+    <Compile Include="choose_board_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_board_items.Designer.cs">
+      <DependentUpon>choose_board_items.cs</DependentUpon>
+    </Compile>
     <Compile Include="functions\window_move.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <EmbeddedResource Include="about_window.resx">
       <DependentUpon>about_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choose_board_items.resx">
+      <DependentUpon>choose_board_items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="D:\vs2010_express_projects\pAudio_test_project_git\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

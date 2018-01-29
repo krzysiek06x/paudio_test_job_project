@@ -16,3 +16,4 @@ D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.starting_window.resources
 D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.about_window.resources
+D:\vs2010_express_projects\pAudio_test_project_git\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.choose_board_items.resources

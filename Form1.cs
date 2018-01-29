@@ -42,5 +42,10 @@ namespace WindowsFormsApplication1
             new about_window().Show();
 
         }
+
+        private void pcb_choose_button_Click(object sender, EventArgs e)
+        {
+            new choose_board_items().Show();
+        }
     }
 }

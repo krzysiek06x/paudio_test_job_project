@@ -45,6 +45,7 @@
             this.pcb_choose_button.Image = global::WindowsFormsApplication1.Properties.Resources.circuit_board_128;
             this.pcb_choose_button.Name = "pcb_choose_button";
             this.pcb_choose_button.UseVisualStyleBackColor = false;
+            this.pcb_choose_button.Click += new System.EventHandler(this.pcb_choose_button_Click);
             // 
             // logo_box
             // 
