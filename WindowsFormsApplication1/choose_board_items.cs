@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace WindowsFormsApplication1
 {
@@ -32,6 +34,8 @@ namespace WindowsFormsApplication1
 
         private void cancel_button_Click(object sender, EventArgs e)
         {
+            port.Dispose();
+            port.Close();
             this.Dispose();
             this.Close();
         }
@@ -90,6 +94,8 @@ namespace WindowsFormsApplication1
                 listBox2.Items.Add("Port " + port.PortName.ToString() + " closed");
                 connect_button.Enabled = false;
                 find_ports_button.Enabled = true;
+                board1_button.Enabled = false;
+                board2_button.Enabled = false;
                 foreach (string s in SerialPort.GetPortNames())
                 {
                     listBox1.Items.Add(s);
@@ -110,7 +116,54 @@ namespace WindowsFormsApplication1
                     listBox2.Items.Add("Can't open port  " + listBox1.SelectedItem.ToString() + "or port not selected");
                 }
                 find_ports_button.Enabled = false;
+                board1_button.Enabled = true;
+                board2_button.Enabled = true;
             }
+        }
+
+        private void board1_button_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Add("Start programming on " + port.PortName + " 1# board");
+            Thread.Sleep(300);
+            listBox2.Items.Add("And here will be example");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Connecting to board....");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Connected");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Erasing..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Programming..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("1# Board programmed !");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Checking..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("And and other instructions.. Thanks for programming!");
+            Thread.Sleep(300);
+            
+        }
+
+        private void board2_button_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Add("Start programming on " + port.PortName + " 2# board");
+            Thread.Sleep(300);
+            listBox2.Items.Add("And here will be example");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Connecting to board....");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Connected");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Erasing..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Programming..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("2# Board programmed !");
+            Thread.Sleep(300);
+            listBox2.Items.Add("Checking..");
+            Thread.Sleep(300);
+            listBox2.Items.Add("And and other instructions.. Thanks for programming!");
+            Thread.Sleep(300);
         }
     }
 }

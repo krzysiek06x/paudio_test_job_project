@@ -28,33 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel_button = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.find_ports_button = new System.Windows.Forms.Button();
             this.welcome_label = new System.Windows.Forms.Label();
             this.connect_button = new System.Windows.Forms.Button();
-            this.logo_box = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.board2_button = new System.Windows.Forms.Button();
+            this.board1_button = new System.Windows.Forms.Button();
+            this.logo_box = new System.Windows.Forms.PictureBox();
+            this.cancel_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo_box)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cancel_button
-            // 
-            this.cancel_button.AutoSize = true;
-            this.cancel_button.FlatAppearance.BorderSize = 0;
-            this.cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel_button.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.cancel_button.Image = global::WindowsFormsApplication1.Properties.Resources.cancel_64_white;
-            this.cancel_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cancel_button.Location = new System.Drawing.Point(13, 573);
-            this.cancel_button.Margin = new System.Windows.Forms.Padding(4);
-            this.cancel_button.Name = "cancel_button";
-            this.cancel_button.Size = new System.Drawing.Size(914, 95);
-            this.cancel_button.TabIndex = 1;
-            this.cancel_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cancel_button.UseVisualStyleBackColor = false;
-            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // listBox2
             // 
@@ -114,6 +99,61 @@
             this.connect_button.UseVisualStyleBackColor = true;
             this.connect_button.Click += new System.EventHandler(this.connect_button_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(263, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 35);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Demo Application";
+            // 
+            // board2_button
+            // 
+            this.board2_button.AutoSize = true;
+            this.board2_button.Enabled = false;
+            this.board2_button.FlatAppearance.BorderSize = 0;
+            this.board2_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.board2_button.Font = new System.Drawing.Font("Consolas", 12F);
+            this.board2_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.board2_button.Image = global::WindowsFormsApplication1.Properties.Resources.circuit1_128;
+            this.board2_button.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.board2_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.board2_button.Location = new System.Drawing.Point(587, 167);
+            this.board2_button.Margin = new System.Windows.Forms.Padding(4);
+            this.board2_button.Name = "board2_button";
+            this.board2_button.Size = new System.Drawing.Size(250, 209);
+            this.board2_button.TabIndex = 11;
+            this.board2_button.Text = "Board 2 name#2";
+            this.board2_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.board2_button.UseVisualStyleBackColor = false;
+            this.board2_button.Click += new System.EventHandler(this.board2_button_Click);
+            // 
+            // board1_button
+            // 
+            this.board1_button.AutoSize = true;
+            this.board1_button.Enabled = false;
+            this.board1_button.FlatAppearance.BorderSize = 0;
+            this.board1_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.board1_button.Font = new System.Drawing.Font("Consolas", 12F);
+            this.board1_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.board1_button.Image = global::WindowsFormsApplication1.Properties.Resources.circuit_128;
+            this.board1_button.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.board1_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.board1_button.Location = new System.Drawing.Point(329, 167);
+            this.board1_button.Margin = new System.Windows.Forms.Padding(4);
+            this.board1_button.Name = "board1_button";
+            this.board1_button.Size = new System.Drawing.Size(250, 209);
+            this.board1_button.TabIndex = 10;
+            this.board1_button.Text = "Board 1 name#1";
+            this.board1_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.board1_button.UseVisualStyleBackColor = false;
+            this.board1_button.Click += new System.EventHandler(this.board1_button_Click);
+            // 
             // logo_box
             // 
             this.logo_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -130,18 +170,22 @@
             this.logo_box.TabIndex = 8;
             this.logo_box.TabStop = false;
             // 
-            // label1
+            // cancel_button
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(263, 66);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 35);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Demo Application";
+            this.cancel_button.AutoSize = true;
+            this.cancel_button.FlatAppearance.BorderSize = 0;
+            this.cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel_button.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cancel_button.Image = global::WindowsFormsApplication1.Properties.Resources.cancel_64_white;
+            this.cancel_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cancel_button.Location = new System.Drawing.Point(13, 573);
+            this.cancel_button.Margin = new System.Windows.Forms.Padding(4);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(914, 95);
+            this.cancel_button.TabIndex = 1;
+            this.cancel_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cancel_button.UseVisualStyleBackColor = false;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // choose_board_items
             // 
@@ -149,6 +193,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(940, 681);
+            this.Controls.Add(this.board2_button);
+            this.Controls.Add(this.board1_button);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logo_box);
             this.Controls.Add(this.connect_button);
@@ -175,5 +221,7 @@
         private System.Windows.Forms.Button connect_button;
         private System.Windows.Forms.PictureBox logo_box;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button board1_button;
+        private System.Windows.Forms.Button board2_button;
     }
 }
